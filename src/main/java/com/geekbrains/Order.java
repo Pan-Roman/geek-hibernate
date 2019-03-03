@@ -19,3 +19,11 @@ public class Order {
     private User user;
 
 }
+
+//DROP TABLE IF EXISTS `hb_test`.`orders`;
+//CREATE TABLE `hb_test`.`orders` (
+//    `id` INT NOT NULL AUTO_INCREMENT,
+//    `date` DATETIME NULL,
+//    `user_id` INT NULL,
+//    PRIMARY KEY (`id`))
+//    ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;

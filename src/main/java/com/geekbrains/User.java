@@ -34,8 +34,9 @@ public class User {
     }
 }
 
-
-//    CREATE TABLE `hb_test`.`users` (
-//        `id` INT NOT NULL AUTO_INCREMENT,
-//        `name` VARCHAR(128) NULL,
-//        PRIMARY KEY (`id`));
+//DROP TABLE IF EXISTS `hb_test`.`users`;
+//CREATE TABLE `hb_test`.`users` (
+//    `id` INT NOT NULL AUTO_INCREMENT,
+//    `name` VARCHAR(128) NULL,
+//    PRIMARY KEY (`id`))
+//    ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;

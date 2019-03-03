@@ -44,3 +44,11 @@ public class Product {
         this.cost = cost;
     }
 }
+
+//DROP TABLE IF EXISTS `hb_test`.`products`;
+//CREATE TABLE `hb_test`.`products` (
+//    `id` INT NOT NULL AUTO_INCREMENT,
+//    `title` VARCHAR(128) NULL DEFAULT NULL,
+//    `cost` FLOAT NULL,
+//    PRIMARY KEY (`id`))
+//    ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
