@@ -10,6 +10,8 @@ public class HibernateApp {
         SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Product.class)
+                .addAnnotatedClass(Order.class)
+                .addAnnotatedClass(User.class)
                 .buildSessionFactory();
         Session session = null;
 

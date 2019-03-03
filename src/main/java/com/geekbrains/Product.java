@@ -17,6 +17,10 @@ public class Product {
     @Column(name = "cost")
     private Float cost;
 
+    @ManyToOne
+    @JoinColumn(name = "order_id")
+    private Order order;
+
     public Product() {
     }
 
@@ -42,6 +46,14 @@ public class Product {
 
     public void setCost(Float cost) {
         this.cost = cost;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
     }
 }
 

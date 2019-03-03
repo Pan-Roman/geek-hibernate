@@ -14,6 +14,10 @@ public class User {
     @Column(name = "name")
     private String name;
 
+    @OneToMany
+    @JoinColumn(name = "order_id")
+    private Order order;
+
     public User() {
     }
 
@@ -31,6 +35,14 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
     }
 }
 
